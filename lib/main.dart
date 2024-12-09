@@ -27,7 +27,7 @@ Future<void> main() async {
         ChangeNotifierProvider(create: (_) => SearchProvider()),
       ],
       child: DevicePreview(
-        enabled: !kReleaseMode,
+        enabled: true,
         builder: (context) => MainApp(isLoggedIn: isLoggedIn),
       ),
     ),
